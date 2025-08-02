@@ -1,0 +1,57 @@
+# ===============================
+# Rust & Cargo
+# ===============================
+/target/
+/Cargo.lock
+
+# Rust debug & profiling
+*.profraw
+*.profdata
+
+# ===============================
+# Environment & Config
+# ===============================
+.env
+.env.*
+config.toml
+config/*.toml
+
+# ===============================
+# SQLite Database & Backups
+# ===============================
+*.db
+*.db-shm
+*.db-wal
+/backups/
+*.sqlite
+*.sqlite3
+
+# ===============================
+# Backup & Export Files
+# ===============================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+
+# ===============================
+# OS & Editor Specific
+# ===============================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.iml

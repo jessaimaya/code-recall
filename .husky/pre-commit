@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+echo "Running pre-commit checks..."
+
+# Type check
+echo "🔍 Checking TypeScript types..."
+npm run typecheck
+
+# Test coverage
+echo "🧪 Running tests with coverage check..."
+npm run test:coverage-check
+
+# Lint check
+echo "🔧 Running ESLint..."
+npm run lint
+
+echo "✅ Pre-commit checks passed!"

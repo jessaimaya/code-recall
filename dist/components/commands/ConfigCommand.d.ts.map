@@ -1,0 +1,1 @@
+{"version":3,"file":"ConfigCommand.d.ts","sourceRoot":"","sources":["../../../src/components/commands/ConfigCommand.tsx"],"names":[],"mappings":"AAAA,OAAO,KAA8B,MAAM,OAAO,CAAC;AAGnD,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,mBAAmB,CAAC;AAEvD,UAAU,kBAAkB;IAC1B,QAAQ,CAAC,OAAO,CAAC,EAAE,aAAa,CAAC;CAClC;AAED,QAAA,MAAM,aAAa,EAAE,KAAK,CAAC,EAAE,CAAC,kBAAkB,CAyC/C,CAAC;AAEF,eAAe,aAAa,CAAC"}

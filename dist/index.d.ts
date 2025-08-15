@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-export {};
+declare const main: () => void;
+export default main;
 //# sourceMappingURL=index.d.ts.map

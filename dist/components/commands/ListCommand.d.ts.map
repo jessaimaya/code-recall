@@ -1,1 +1,0 @@
-{"version":3,"file":"ListCommand.d.ts","sourceRoot":"","sources":["../../../src/components/commands/ListCommand.tsx"],"names":[],"mappings":"AAAA,OAAO,KAA8B,MAAM,OAAO,CAAC;AAGnD,OAAO,KAAK,EAAE,WAAW,EAAa,MAAM,mBAAmB,CAAC;AAEhE,UAAU,gBAAgB;IACxB,QAAQ,CAAC,OAAO,CAAC,EAAE,WAAW,CAAC;CAChC;AAED,QAAA,MAAM,WAAW,EAAE,KAAK,CAAC,EAAE,CAAC,gBAAgB,CA8C3C,CAAC;AAEF,eAAe,WAAW,CAAC"}

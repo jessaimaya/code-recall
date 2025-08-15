@@ -1,12 +1,17 @@
 # ===============================
-# Rust & Cargo
+# Node.js & npm
 # ===============================
-/target/
-/Cargo.lock
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
 
-# Rust debug & profiling
-*.profraw
-*.profdata
+# Build output
+dist/
+build/
+*.tsbuildinfo
 
 # ===============================
 # Environment & Config

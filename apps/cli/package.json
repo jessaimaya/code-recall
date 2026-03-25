@@ -1,0 +1,16 @@
+{
+  "name": "@repo/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo \"cli: no dev yet\"",
+    "build": "echo \"cli: no build yet\"",
+    "test": "echo \"cli: no tests yet\"",
+    "lint": "echo \"cli: no lint yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2"
+}

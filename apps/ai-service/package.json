@@ -1,0 +1,16 @@
+{
+  "name": "@repo/ai-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo \"ai-service: no dev server yet\"",
+    "build": "echo \"ai-service: no build yet\"",
+    "test": "echo \"ai-service: no tests yet\"",
+    "lint": "echo \"ai-service: no lint yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"db: no build yet\"",
+    "test": "echo \"db: no tests yet\"",
+    "lint": "echo \"db: no lint yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2"
+}

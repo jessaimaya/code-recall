@@ -33,6 +33,9 @@ lerna-debug.log*
 *.sln
 *.sw?
 
+# Rust
+apps/cli/target/
+
 # OS
 .DS_Store
 Thumbs.db

@@ -85,6 +85,8 @@ export const reviews = sqliteTable("reviews", {
   reviewAt: text("review_at")
     .notNull()
     .default(sql`(strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))`),
+  // null = not yet pushed to Turso; set on successful sync
+  syncedAt: text("synced_at"),
 });
 
 export const testCases = sqliteTable("test_cases", {

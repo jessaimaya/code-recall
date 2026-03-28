@@ -9,6 +9,9 @@
     "test": "echo \"ai-service: no tests yet\"",
     "lint": "echo \"ai-service: no lint yet\""
   },
+  "dependencies": {
+    "@repo/db": "workspace:*"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

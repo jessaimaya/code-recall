@@ -1,12 +1,20 @@
 {
   "name": "@repo/core",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Shared TypeScript utilities for code-recall",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "echo \"core: no build yet\"",
-    "test": "echo \"core: no tests yet\"",
-    "lint": "echo \"core: no lint yet\""
+    "build": "tsc",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@repo/config": "workspace:*",
+    "@vitest/coverage-v8": "^3.2.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.3"
   },
   "keywords": [],
   "author": "",

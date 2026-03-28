@@ -18,6 +18,7 @@
     "lint": "echo \"db: no lint yet\"",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
+    "db:reset": "tsx scripts/reset.ts",
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
@@ -25,7 +26,9 @@
     "@libsql/client": "^0.15.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "drizzle-kit": "^0.30.0",
+    "tsx": "^4.19.3",
     "typescript": "^5.7.3",
     "@repo/config": "workspace:*"
   },

@@ -1,0 +1,1 @@
+ALTER TABLE `reviews` ADD `synced_at` text;

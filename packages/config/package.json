@@ -11,6 +11,7 @@
   "scripts": {
     "build": "echo \"config: no build\"",
     "test": "echo \"config: no tests\"",
+    "typecheck": "echo \"config: no typecheck\"",
     "lint": "echo \"config: no lint\""
   },
   "devDependencies": {

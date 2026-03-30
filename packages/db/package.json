@@ -15,6 +15,7 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "test": "echo \"db: no tests yet\"",
+    "typecheck": "tsc --noEmit",
     "lint": "echo \"db: no lint yet\"",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",

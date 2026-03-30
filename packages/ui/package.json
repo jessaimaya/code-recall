@@ -6,6 +6,7 @@
   "scripts": {
     "build": "echo \"ui: no build yet\"",
     "test": "echo \"ui: no tests yet\"",
+    "typecheck": "echo \"ui: no typecheck yet\"",
     "lint": "echo \"ui: no lint yet\""
   },
   "keywords": [],

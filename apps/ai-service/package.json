@@ -7,6 +7,7 @@
     "dev": "echo \"ai-service: no dev server yet\"",
     "build": "echo \"ai-service: no build yet\"",
     "test": "echo \"ai-service: no tests yet\"",
+    "typecheck": "echo \"ai-service: no typecheck yet\"",
     "lint": "echo \"ai-service: no lint yet\""
   },
   "dependencies": {

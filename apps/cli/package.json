@@ -7,6 +7,7 @@
     "dev": "echo \"cli: no dev yet\"",
     "build": "echo \"cli: no build yet\"",
     "test": "echo \"cli: no tests yet\"",
+    "typecheck": "echo \"cli: no typecheck yet\"",
     "lint": "echo \"cli: no lint yet\""
   },
   "keywords": [],

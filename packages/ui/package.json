@@ -1,0 +1,16 @@
+{
+  "name": "@repo/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"ui: no build yet\"",
+    "test": "echo \"ui: no tests yet\"",
+    "typecheck": "echo \"ui: no typecheck yet\"",
+    "lint": "echo \"ui: no lint yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2"
+}

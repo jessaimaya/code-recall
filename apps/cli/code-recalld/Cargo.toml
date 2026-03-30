@@ -1,0 +1,15 @@
+[package]
+name = "code-recalld"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Background daemon for code-recall — fires review notifications"
+
+[[bin]]
+name = "code-recalld"
+path = "src/main.rs"
+
+[dependencies]
+core-rs = { path = "../core-rs" }
+anyhow = { workspace = true }

@@ -1,0 +1,15 @@
+[package]
+name = "code-recall"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Spaced repetition CLI for developers"
+
+[[bin]]
+name = "code-recall"
+path = "src/main.rs"
+
+[dependencies]
+core-rs = { path = "../core-rs" }
+anyhow = { workspace = true }

@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "echo \"ai-service: no dev server yet\"",
-    "build": "echo \"ai-service: no build yet\"",
-    "test": "echo \"ai-service: no tests yet\"",
-    "lint": "echo \"ai-service: no lint yet\""
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"ai-service: integration tests require ANTHROPIC_API_KEY\"",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts"
   },
   "dependencies": {
-    "@repo/db": "workspace:*"
+    "@anthropic-ai/sdk": "^0.80.0",
+    "@hono/node-server": "^1.19.11",
+    "@repo/db": "workspace:*",
+    "hono": "^4.12.9",
+    "zod": "^4.3.6"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.28.2",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
 }

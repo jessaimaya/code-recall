@@ -1,0 +1,50 @@
+services:
+  # ── Turso local emulator (sqld / libSQL server) ───────────────────────────
+  sqld:
+    image: ghcr.io/tursodatabase/sqld:latest
+    container_name: code-recall-sqld
+    restart: unless-stopped
+    ports:
+      - "8080:8080" # HTTP API — used by @libsql/client
+    environment:
+      SQLD_NODE: primary
+    volumes:
+      - sqld-data:/var/lib/sqld
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+  # ── AI service ────────────────────────────────────────────────────────────
+  ai-service:
+    build:
+      context: ./apps/ai-service
+      dockerfile: Dockerfile
+    container_name: code-recall-ai-service
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+      TURSO_DATABASE_URL: http://sqld:8080
+      TURSO_AUTH_TOKEN: ${TURSO_AUTH_TOKEN:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+    depends_on:
+      sqld:
+        condition: service_healthy
+    volumes:
+      # Mount source for hot-reload in dev; node_modules stays inside container
+      - ./apps/ai-service/src:/app/src:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  sqld-data:
+    driver: local

@@ -1,0 +1,25 @@
+[workspace]
+members = ["code-recall", "code-recalld", "core-rs"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["jessaí maya"]
+license = "MIT"
+
+[workspace.dependencies]
+rusqlite = { version = "0.32", features = ["bundled"] }
+dirs = "5"
+toml = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
